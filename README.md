@@ -9,7 +9,7 @@ Firewatch is a real-time fire detection and emergency response system. It contin
 If action is required, Gemini generates context around the fire by analyzing the image, and that response is passed to **Cerebras** and used with **Twilio** to hold a real-time, autonomous conversation with emergency operators via phone call.
 
 The system also:
-- Sends an **email alert** to the user (via **Mailjet**) with fire details and a viewable image from the file stored in **Supabase**.
+- Sends an **email alert** to the user (via **Mailjet**) with the details of the fire and a viewable image from the file stored in **Supabase**.
 - Listens for **email replies** via **IMAP**; if the user requests an update, it re-analyzes the scene and may re-trigger an emergency call if the fire has intensified.
 
 ## How we built it
